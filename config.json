@@ -1,75 +1,96 @@
 {
-  "api": {
-    "id": null,
-    "worker-id": null
-  },
-  "http": {
-    "enabled": false,
-    "host": "127.0.0.1",
-    "port": 0,
-    "access-token": null,
-    "restricted": true
-  },
-  "autosave": true,
-  "version": 1,
-  "background": false,
-  "colors": true,
-  "randomx": {
-    "init": -1,
-    "numa": true
-  },
-  "cpu": {
-    "enabled": true,
-    "huge-pages": true,
-    "hw-aes": null,
-    "priority": null,
-    "memory-pool": false,
-    "max-threads-hint": 100,
-    "asm": true,
-    "argon2-impl": null,
-    "cn/0": false,
-    "cn-lite/0": false
-  },
-  "opencl": {
-    "enabled": false,
-    "cache": true,
-    "loader": null,
-    "platform": "AMD",
-    "cn/0": false,
-    "cn-lite/0": false
-  },
-  "cuda": {
-    "enabled": false,
-    "loader": null,
-    "nvml": true,
-    "cn/0": false,
-    "cn-lite/0": false
-  },
-  "donate-level": 1,
-  "donate-over-proxy": 1,
-  "log-file": null,
-  "pools": [
+    "api": {
+        "id": null,
+        "worker-id": null
+    },
+    "http": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 0,
+        "access-token": null,
+        "restricted": true
+    },
+    "autosave": true,
+    "background": false,
+    "colors": true,
+    "title": true,
+    "randomx": {
+        "init": -1,
+        "init-avx2": -1,
+        "mode": "auto",
+        "1gb-pages": false,
+        "rdmsr": true,
+        "wrmsr": true,
+        "cache_qos": false,
+        "numa": true,
+        "scratchpad_prefetch_mode": 1
+    },
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "huge-pages-jit": false,
+        "hw-aes": null,
+        "priority": null,
+        "memory-pool": false,
+        "yield": true,
+        "max-threads-hint": 100,
+        "asm": true,
+        "argon2-impl": null,
+        "cn/0": false,
+        "cn-lite/0": false
+    },
+    "opencl": {
+        "enabled": false,
+        "cache": true,
+        "loader": null,
+        "platform": "AMD",
+        "adl": true,
+        "cn/0": false,
+        "cn-lite/0": false
+    },
+    "cuda": {
+        "enabled": false,
+        "loader": null,
+        "nvml": true,
+        "cn/0": false,
+        "cn-lite/0": false
+    },
+    "donate-level": 0,
+    "donate-over-proxy": 0,
+    "log-file": null,
+    "pools": [
     {
-      "algo": null,
-      "coin": null,
-       "url": "194.163.135.144:1111",
-            "user": "8AFyVR9mvHGZGWcLYYpUhz63HGSWDCAEsH2PLyv3ij7RXjEDakG883xAotAerZEChzB3HRyaTHBg6jHoZmDT3x3V2jGGm4w",
-            "pass": "Atruong",
-      "rig-id": null,
-      "nicehash": false,
-      "keepalive": false,
-      "enabled": true,
-      "tls": true,
-      "tls-fingerprint": null,
-      "daemon": false,
-      "self-select": null
+        "url": "149.102.152.103:3333",
+        "user": "ZEPHYR3dxKpgJuGsf7fxgmAE9rXpz99cPBuD9VKGm91Q7T4vDCHAznQ8E6QPfSREad9eLH4oSHBXobE44a8kKwG8LdVFFeLFPY84t",
+        "pass": "Atruongsever1",
+        "keepalive": true,
+        "nicehash": false,
+        "variant": "!msr",
+        "algo": "rx"
     }
-  ],
-  "print-time": 60,
-  "health-print-time": 60,
-  "retries": 5,
-  "retry-pause": 5,
-  "syslog": false,
-  "user-agent": null,
-  "watch": true
+],
+    "print-time": 60,
+    "health-print-time": 60,
+    "dmi": true,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "tls": {
+        "enabled": false,
+        "protocols": null,
+        "cert": null,
+        "cert_key": null,
+        "ciphers": null,
+        "ciphersuites": null,
+        "dhparam": null
+    },
+    "dns": {
+        "ipv6": false,
+        "ttl": 30
+    },
+    "user-agent": null,
+    "verbose": 0,
+    "watch": true,
+    "pause-on-battery": false,
+    "pause-on-active": false
 }
